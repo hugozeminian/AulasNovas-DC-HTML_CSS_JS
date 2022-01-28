@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+h2{
+    font-size: 17px;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+}
+
+.teste{
+    color: red;
+}
+
+/* 
+Como boa prática no CSS deve-se trabalhar apenas com classes.
+o ID também pode ser chamado no CSS utilizando o #, porém ele
+geralmente é utilizado no JavaScrip.
+#teste{
+    color: gold;
+}
+*/
+
+.paragrafo{
+    font-size: 30px;
+}
+
+.paragrafo{
+    font-size: 10px;
+}
+
+[name=paragrafo]{
+    color: gold;
+}
+
+div.cor{
+    background-color: rgb(255,0,0);
+    background-color: #151515;
+    background-color: green;
+}
+
+.bg{
+    width: 100%;
+    height: 400px;
+    background-image: url("../images/landscape.jpg");
+    background-repeat: no-repeat;
+    background-color: violet;
+    background-position: center;
+    background-size: cover;
+}
+
+.container{
+    margin: 20px;
+}
+
+.d1{
+    width: 50%;
+    padding: 20px;
+    margin: 10px;
+    display: inline-block;
+    background-color: gold;
+}
+
+.d2{
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    background-color: red;
+}
+
+.d3{
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    background-color: blue;
+}
+
+.container2{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+}
+
+.d4{
+    width: 100%;
+    background-color: gold;
+}
+
+.d5{
+    width: 50%;
+    height: 300px;
+    background-color: red;
+}
+
+.d6{
+    width: 50%;
+    height: 300px;
+    background-color: blue;
+}
+
+
+.teste h2.title{
+    color: goldenrod;
+}
+
+h2.title{
+    color: blue;
+}
+
+.teste{
+    color: green;
+}
+
+.teste > .teste2 > h2.title{ /* deve ser o caminho exato */
+    color: violet;
+}
+
+h2{
+    color: aqua !important; /* se torna maior prioridade */
+}
+
+
+.tst{
+    width: 400px;
+    height: 400px;
+    background-color: yellowgreen;
+    animation-name: anim1;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anim1{
+    /*
+    from{background-color: green;width:2px;}
+    to{background-color: red;}
+    */
+    0% {background-color: green;width:2px;}
+    50% {background-color: red;}
+    100% {background-color: blue;}
+}

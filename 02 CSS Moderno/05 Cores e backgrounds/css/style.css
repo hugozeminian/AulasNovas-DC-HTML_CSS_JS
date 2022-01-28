@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+h2{
+    font-size: 17px;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+}
+
+.teste{
+    color: red;
+}
+
+/* 
+Como boa prática no CSS deve-se trabalhar apenas com classes.
+o ID também pode ser chamado no CSS utilizando o #, porém ele
+geralmente é utilizado no JavaScrip.
+#teste{
+    color: gold;
+}
+*/
+
+.paragrafo{
+    font-size: 30px;
+}
+
+.paragrafo{
+    font-size: 10px;
+}
+
+[name=paragrafo]{
+    color: gold;
+}
+
+div{
+    background-color: rgb(255,0,0);
+    background-color: #151515;
+    background-color: green;
+}

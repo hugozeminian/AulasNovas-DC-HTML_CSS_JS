@@ -1,0 +1,32 @@
+<html>
+    <body>
+        <script>
+          /*
+          var date = new Date();
+          console.log(date.getDate()) //Dia do mês
+          console.log(date.getDay()) //Dia da semana
+          console.log(date.getFullYear()) //Ano cheio
+          console.log(date.getHours()) //Hora HH
+          console.log(date.getMinutes()) //Minutos
+          */
+
+            //*******Como calcular diferença de datas:********
+            var date1 = new Date('11/15/2021') //sempre criar data no formato americano MM/DD/AAAA
+            console.log(date1.getDate())
+
+            var date2 = new Date('11/20/2021')
+
+            console.log(date1.getTime())// -> gera data em mile segundos (desde jan 01, 1970)
+
+            var diferença = (date2.getTime() - date1.getTime()) / (1000 * 3600 * 24) 
+            /*
+            **************Valores do cálculo para transformar mile segundos em dias**************
+             1000 valor correspondente a 1s; 
+             3600 valor correspondente de quantos segundos existem em 1 hora
+             24 valor correspondente a quantidade de horas em dia
+            */
+            console.log(diferença)
+
+        </script>
+    </body>
+</html>

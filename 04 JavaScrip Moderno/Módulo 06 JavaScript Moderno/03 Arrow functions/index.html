@@ -1,0 +1,57 @@
+<html>
+    <body>
+        <script>
+           
+           /* existem duas formas de escrever funções
+           veja abaixo.
+           1ª está escrita de forma tradicional
+           2ª é chamada de arrow functions, ela possui uma escrita mais moderna e será mais vista atualmente.
+           ambas teriam o mesmo resultado
+
+           */
+
+           testes1() //chama a função a qualquer momento
+
+           function testes1 () {
+            alert("function testes1 invocada")
+           }
+
+           const testes2 = ()=>{
+            alert('olá')
+           }
+
+           testes2() // como a função está dentro da declaração CONST a chamada deve vir embaixo
+
+
+           // arrow functions com parâmetros:
+           const testes3 = (parametro1)=>{
+               alert(parametro1)
+           }
+
+           testes3('texto parametro função teste3')
+           console.log('olá2')
+
+           
+           
+
+           //Exemplo de uma função dentro de outra
+           const func1 = (par1,par2,par3)=>{
+                alert(par1)
+                alert(par2)
+                alert(par3)
+                par2('xxx')
+                par3(par2)
+
+           }
+
+           func1('parametro1',(txt1)=>{alert(txt1)},(par_f3)=>{alert(par_f3)})
+
+           const func2 = ()=>{
+               alert('adios')
+            }
+            func2()
+
+
+        </script>
+    </body>
+</html>

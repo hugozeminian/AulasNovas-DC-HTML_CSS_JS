@@ -1,0 +1,37 @@
+<html>
+    <body>
+        <script>
+         
+        class Animal{
+            constructor(nome,peso){
+                this.nome = nome;
+                this.peso = peso;
+            }
+
+            printNome(){
+                return this.nome;
+            }
+
+        }
+
+        class Cachorro extends Animal{
+            constructor(nome,peso,raca){
+                super(nome,peso);
+                this.raca = raca
+            }
+
+            printRaca(){
+                return this.raca;
+            }
+        }
+
+       cachorro = new Cachorro("Rocky",33,"lulu")
+
+        console.log(cachorro)
+        console.log(cachorro.printNome())
+        console.log(cachorro.peso)
+        console.log(cachorro.printRaca())
+    
+        </script>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<html>
+    <body>
+        <script>
+          /*
+          **Aplicação calculadora dinâmica
+
+          *Valor inicial
+          *Tipo de operação
+          *Valor final
+          */  
+          var n1, n2, resultado, sinal
+
+          n1 = prompt("informar o 1º número")
+          
+          sinal = prompt("informar a operação")
+          while(sinal != '-' && sinal !='+' && sinal != '/' && sinal != '*'){
+              alert("informar um sinal válido")
+              sinal = prompt("informar a operação")
+          }
+          
+          n2 = prompt("informar o 2º número")
+
+          //Converter string para int
+          n1 = parseInt(n1)
+          n2 = parseInt(n2)
+
+          if (sinal == "+") {
+              resultado = n1 + n2
+          } else if (sinal == "-") {
+              resultado = n1 - n2
+          } else if (sinal == "/") {
+              resultado = n1 / n2
+          } else if (sinal == "*") {
+              resultado = n1 * n2
+          } else {
+              console.log("erro")
+          }
+
+          console.log(resultado)
+            
+
+        </script>
+    </body>
+</html>

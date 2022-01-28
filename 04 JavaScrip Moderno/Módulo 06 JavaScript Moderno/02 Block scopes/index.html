@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <script>
+            
+            //global
+            function testes(){
+                var nome = 'Hugo'
+                console.log(nome)
+            }
+            
+            testes() // gera nome Hugo
+
+            {
+                //Vau ficar definido apenas neste escopo
+                let nome2 = 'Louyse'
+
+                let testes = ()=>{
+                    console.log('olá')
+                }
+
+                testes() // gera ola
+                console.log(nome2) // gera nome Louyse
+                
+            }
+            testes() // gera nome Hugo
+            console.log(nome2) // gera erro, porque está fora do escopo
+        </script>
+    </body>
+</html>

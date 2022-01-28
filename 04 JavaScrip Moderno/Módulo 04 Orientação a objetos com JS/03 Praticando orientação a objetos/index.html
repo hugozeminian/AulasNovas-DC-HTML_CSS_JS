@@ -1,0 +1,26 @@
+<html>
+    <body>
+        <script>
+         
+        function Animal(nome,peso){
+            if(nome == undefined){
+                nome = "Cachorro"
+            }
+
+            if(peso == undefined){
+                peso = "5kg"
+            }
+
+            this.nome = nome;
+            this.peso = peso;
+        }
+
+        nomeAnimal = prompt("informar o nome do animal")
+        pesoAnimal = prompt("informar o peso do animal")
+        animal = new Animal(nomeAnimal, pesoAnimal);
+
+        console.log(animal)
+        
+        </script>
+    </body>
+</html>
